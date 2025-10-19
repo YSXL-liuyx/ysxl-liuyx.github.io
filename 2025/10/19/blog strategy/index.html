@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="容器,STL,C++," />
+  <meta name="keywords" content="部署,Hexo,Next,Git," />
 
 
 
@@ -79,19 +79,20 @@
 
 
 
-<meta name="description" content="C++ 容器用法指南目录 序列式容器 关联式容器 无序关联式容器 容器适配器 常用操作总结   序列式容器vector - 动态数组#include &lt;vector&gt; #include &lt;iostream&gt;  int main() &#123;     &#x2F;&#x2F; 创建vector     std::vector&lt;int&gt; vec &#x3D; &#123;1, 2, 3, 4">
+<meta name="description" content="一．Hexo + Next 搭建个人博客为什么没有成功上传到自己的GitHub网站 1️⃣ 检查 Hexo 配置文件 _config.yml Hexo 的部署主要依赖两个地方：  根目录的 _config.yml 主题目录下的 _config.yml（Next 主题有自己的配置）  # 根目录 _config.yml url: https:&#x2F;&#x2F;你的用户名.github.io #">
 <meta property="og:type" content="article">
-<meta property="og:title" content="C++ 容器用法指南">
-<meta property="og:url" content="https://ysxl-liuyx.github.io/2025/09/08/cpp-container-guide/index.html">
+<meta property="og:title" content="Hexo + Next 博客部署完整指南（含 GitHub Pages 常见问题排查）">
+<meta property="og:url" content="https://ysxl-liuyx.github.io/2025/10/19/blog%20strategy/index.html">
 <meta property="og:site_name" content="hdswzj&#39;s blog">
-<meta property="og:description" content="C++ 容器用法指南目录 序列式容器 关联式容器 无序关联式容器 容器适配器 常用操作总结   序列式容器vector - 动态数组#include &lt;vector&gt; #include &lt;iostream&gt;  int main() &#123;     &#x2F;&#x2F; 创建vector     std::vector&lt;int&gt; vec &#x3D; &#123;1, 2, 3, 4">
+<meta property="og:description" content="一．Hexo + Next 搭建个人博客为什么没有成功上传到自己的GitHub网站 1️⃣ 检查 Hexo 配置文件 _config.yml Hexo 的部署主要依赖两个地方：  根目录的 _config.yml 主题目录下的 _config.yml（Next 主题有自己的配置）  # 根目录 _config.yml url: https:&#x2F;&#x2F;你的用户名.github.io #">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2025-09-08T02:00:00.000Z">
-<meta property="article:modified_time" content="2025-09-17T01:30:19.112Z">
+<meta property="article:published_time" content="2025-10-19T12:00:00.000Z">
+<meta property="article:modified_time" content="2025-10-19T14:50:40.292Z">
 <meta property="article:author" content="hdswzj">
-<meta property="article:tag" content="容器">
-<meta property="article:tag" content="STL">
-<meta property="article:tag" content="C++">
+<meta property="article:tag" content="部署">
+<meta property="article:tag" content="Hexo">
+<meta property="article:tag" content="Next">
+<meta property="article:tag" content="Git">
 <meta name="twitter:card" content="summary">
 
 
@@ -122,13 +123,13 @@
 
 
 
-  <link rel="canonical" href="https://YSXL-liuyx.github.io/2025/09/08/cpp-container-guide/"/>
+  <link rel="canonical" href="https://YSXL-liuyx.github.io/2025/10/19/blog strategy/"/>
 
 
 
 
 
-  <title>C++ 容器用法指南 | hdswzj's blog</title>
+  <title>Hexo + Next 博客部署完整指南（含 GitHub Pages 常见问题排查） | hdswzj's blog</title>
   
 
 
@@ -265,7 +266,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://YSXL-liuyx.github.io/2025/09/08/cpp-container-guide/">
+    <link itemprop="mainEntityOfPage" href="https://YSXL-liuyx.github.io/2025/10/19/blog%20strategy/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="[object Object]">
@@ -282,7 +283,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">C++ 容器用法指南</h1>
+          <h1 class="post-title" itemprop="name headline">Hexo + Next 博客部署完整指南（含 GitHub Pages 常见问题排查）</h1>
         
 
         <div class="post-meta">
@@ -294,8 +295,8 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2025-09-08T10:00:00+08:00">
-                2025-09-08
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2025-10-19T20:00:00+08:00">
+                2025-10-19
               </time>
             
 
@@ -317,8 +318,19 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/C/" itemprop="url" rel="index">
-                    <span itemprop="name">C++</span>
+                  <a href="/categories/Hexo/" itemprop="url" rel="index">
+                    <span itemprop="name">Hexo</span>
+                  </a>
+                </span>
+
+                
+                
+                  , 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Hexo/GitHub-Pages/" itemprop="url" rel="index">
+                    <span itemprop="name">GitHub Pages</span>
                   </a>
                 </span>
 
@@ -354,54 +366,144 @@
       
 
       
-        <h1 id="C-容器用法指南"><a href="#C-容器用法指南" class="headerlink" title="C++ 容器用法指南"></a>C++ 容器用法指南</h1><h2 id="目录"><a href="#目录" class="headerlink" title="目录"></a>目录</h2><ol>
-<li><a href="#%E5%BA%8F%E5%88%97%E5%BC%8F%E5%AE%B9%E5%99%A8">序列式容器</a></li>
-<li><a href="#%E5%85%B3%E8%81%94%E5%BC%8F%E5%AE%B9%E5%99%A8">关联式容器</a></li>
-<li><a href="#%E6%97%A0%E5%BA%8F%E5%85%B3%E8%81%94%E5%BC%8F%E5%AE%B9%E5%99%A8">无序关联式容器</a></li>
-<li><a href="#%E5%AE%B9%E5%99%A8%E9%80%82%E9%85%8D%E5%99%A8">容器适配器</a></li>
-<li><a href="#%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C%E6%80%BB%E7%BB%93">常用操作总结</a></li>
+        <p><strong>一．Hexo + Next 搭建个人博客为什么没有成功上传到自己的GitHub网站</strong></p>
+<p><strong>1️⃣ 检查 Hexo 配置文件 _config.yml</strong></p>
+<p>Hexo 的部署主要依赖两个地方：</p>
+<ul>
+<li>根目录的 _config.yml</li>
+<li>主题目录下的 _config.yml（Next 主题有自己的配置）</li>
+</ul>
+<p># 根目录 _config.yml</p>
+<p>url: https:&#x2F;&#x2F;你的用户名.github.io # 注意不要写本地地址</p>
+<p>deploy:</p>
+<p>type: git</p>
+<p>repository: <a target="_blank" rel="noopener" href="https://github.com/%E4%BD%A0%E7%9A%84%E7%94%A8%E6%88%B7%E5%90%8D/%E4%BD%A0%E7%9A%84%E4%BB%93%E5%BA%93%E5%90%8D.git">https://github.com/你的用户名/你的仓库名.git</a></p>
+<p>branch: main # 或 gh-pages，根据你的仓库分支选择</p>
+<ul>
+<li>url 一定要是你 GitHub Pages 的地址。</li>
+<li>branch 默认 Hexo 是 gh-pages，但 GitHub 的默认分支可能是 main。</li>
+<li>Next 主题 _config.yml 中 deploy 部分通常不需要改，主要关注根目录。</li>
+<li>**！！！**注意：<strong>用户名大小写不强制，但建议保持原样</strong></li>
+<li>**！！！**注意：<strong>仓库名必须严格匹配 GitHub 上的大小写</strong></li>
+<li>**！！！**注意：要更改根目录 _config.yml而非Next主题下的 _config.yml</li>
+</ul>
+<p><strong>2️⃣ 检查 GitHub 仓库和分支</strong></p>
+<ol>
+<li>确认你已经创建了仓库（例如 username.github.io）</li>
+<li>分支是否匹配 Hexo 配置（main 或 gh-pages）</li>
+<li>如果是 <strong>用户页面仓库</strong>（username.github.io），分支一般是 main</li>
+<li>如果是 <strong>项目页面仓库</strong>（repo-name），分支一般是 gh-pages，并且 url 配置应加 &#x2F;repo-name&#x2F;</li>
 </ol>
-<hr>
-<h2 id="序列式容器"><a href="#序列式容器" class="headerlink" title="序列式容器"></a>序列式容器</h2><h3 id="vector-动态数组"><a href="#vector-动态数组" class="headerlink" title="vector - 动态数组"></a>vector - 动态数组</h3><pre><code class="language-cpp">#include &lt;vector&gt;
-#include &lt;iostream&gt;
-
-int main() &#123;
-    // 创建vector
-    std::vector&lt;int&gt; vec = &#123;1, 2, 3, 4, 5&#125;;
-    
-    // 添加元素
-    vec.push_back(6);                // 末尾添加
-    vec.insert(vec.begin() + 2, 10); // 指定位置插入
-    
-    // 访问元素
-    std::cout &lt;&lt; &quot;第一个元素: &quot; &lt;&lt; vec.front() &lt;&lt; std::endl;
-    std::cout &lt;&lt; &quot;最后一个元素: &quot; &lt;&lt; vec.back() &lt;&lt; std::endl;
-    std::cout &lt;&lt; &quot;下标访问: &quot; &lt;&lt; vec[2] &lt;&lt; std::endl;       // 不检查边界
-    std::cout &lt;&lt; &quot;at()访问: &quot; &lt;&lt; vec.at(2) &lt;&lt; std::endl;   // 检查边界
-    
-    // 遍历
-    for (auto it = vec.begin(); it != vec.end(); ++it) &#123;
-        std::cout &lt;&lt; *it &lt;&lt; &quot; &quot;;
-    &#125;
-    
-    // 范围for循环 (C++11)
-    for (int num : vec) &#123;
-        std::cout &lt;&lt; num &lt;&lt; &quot; &quot;;
-    &#125;
-    
-    // 删除元素
-    vec.pop_back();                 // 删除末尾
-    vec.erase(vec.begin() + 1);     // 删除指定位置
-    vec.clear();                    // 清空
-    
-    // 容量操作
-    std::cout &lt;&lt; &quot;大小: &quot; &lt;&lt; vec.size() &lt;&lt; std::endl;
-    std::cout &lt;&lt; &quot;容量: &quot; &lt;&lt; vec.capacity() &lt;&lt; std::endl;
-    vec.shrink_to_fit();            // 缩减容量
-    
-    return 0;
-&#125;
-</code></pre>
+<p><strong>3️⃣ 部署命令是否正确</strong></p>
+<p>常用命令：</p>
+<p># 清理旧文件</p>
+<p>hexo clean</p>
+<p># 生成静态文件</p>
+<p>hexo generate</p>
+<p># 部署到 GitHub</p>
+<p>hexo deploy</p>
+<p>如果你使用 npm run deploy 或 yarn deploy，确保 package.json 中 scripts 对应正确：</p>
+<p>“scripts”: {</p>
+<p>“deploy”: “hexo clean &amp;&amp; hexo generate &amp;&amp; hexo deploy”</p>
+<p>}</p>
+<p><strong>4️⃣ 检查 GitHub Pages 设置</strong></p>
+<ul>
+<li>仓库 → Settings → Pages</li>
+<li>确认 <strong>Source</strong> 设置为你部署的分支（main 或 gh-pages）</li>
+<li>等待几分钟，GitHub Pages 才会生效</li>
+</ul>
+<p><strong>5️⃣ 常见错误</strong></p>
+<ol>
+<li><strong>404 或网站不更新</strong><ul>
+<li>原因：url 或 root 配置错误</li>
+<li>Next 主题 _config.yml 中 root 默认 &#x2F;，如果是项目页面，需要改为 &#x2F;repo-name&#x2F;</li>
+</ul>
+</li>
+<li><strong>hexo deploy 报错</strong><ul>
+<li>原因：git 权限问题</li>
+<li>解决：确认 git remote add origin <a target="_blank" rel="noopener" href="https://github.com/%E7%94%A8%E6%88%B7%E5%90%8D/%E4%BB%93%E5%BA%93.git">https://github.com/用户名/仓库.git</a> 正确</li>
+<li>可以尝试使用 <strong>GitHub Personal Access Token</strong> 代替密码</li>
+</ul>
+</li>
+<li><strong>主题资源加载失败</strong><ul>
+<li>原因：root 设置错误或主题静态文件路径错</li>
+<li>Next 主题 _config.yml：</li>
+<li>root: &#x2F; # 用户页面</li>
+<li># 或</li>
+<li>root: &#x2F;repo-name&#x2F; # 项目页面</li>
+</ul>
+</li>
+</ol>
+<p><strong>二．main和master分支有什么不同</strong></p>
+<p>1️⃣ 历史背景</p>
+<ul>
+<li>传统上，Git 初始化仓库的默认主分支叫 master。</li>
+<li>近年来，尤其是 GitHub 从 2020 年起，为了使用更中性的术语，把新建仓库的默认主分支改为 main。</li>
+<li>所以从 Git 功能上讲，master 和 main 没有本质区别，它们都是普通分支，只是默认名称不同。</li>
+</ul>
+<p>2️⃣ 默认分支的作用</p>
+<ul>
+<li>Git 仓库中的默认分支是：<ul>
+<li>新建仓库时生成的首个分支</li>
+<li>GitHub Pages 用户页面部署时默认读取的分支</li>
+</ul>
+</li>
+<li>如果你创建的是 用户页面仓库（username.github.io），GitHub 默认使用 main 分支部署网站。</li>
+<li>如果你使用 项目页面仓库，你可以选择 gh-pages 或其他分支来部署。</li>
+</ul>
+<p>3️⃣ 使用上的注意</p>
+<ul>
+<li>在 Hexo 部署中，你要确保 _config.yml 的 deploy.branch 与 GitHub 仓库的默认分支一致：</li>
+</ul>
+<p>deploy:</p>
+<p>type: git</p>
+<p>repository: <a target="_blank" rel="noopener" href="https://github.com/%E7%94%A8%E6%88%B7%E5%90%8D/%E4%BB%93%E5%BA%93.git">https://github.com/用户名/仓库.git</a></p>
+<p>branch: main # 如果仓库默认分支是 master，就写 master</p>
+<ul>
+<li>否则 hexo deploy 会推送到不存在的分支，导致 GitHub Pages 不显示内容。</li>
+</ul>
+<p>4️⃣ 切换分支名称</p>
+<p>如果你的仓库还是 master，但想用 main，可以这样操作：</p>
+<p># 切换本地分支名称</p>
+<p>git branch -m master main</p>
+<p># 删除远程 master</p>
+<p>git push origin :master</p>
+<p># 推送新分支</p>
+<p>git push origin main</p>
+<p># 设置 upstream</p>
+<p>git push –set-upstream origin main</p>
+<p>✅ 总结</p>
+<ul>
+<li>main 和 master 只是名字不同，本质相同。</li>
+<li>新建仓库默认是 main（GitHub），旧仓库是 master。</li>
+<li>Hexo 部署必须保证 _config.yml 的 branch 与仓库默认分支一致。</li>
+<li>确保本地分支与远程分支一致</li>
+</ul>
+<p><strong>三．Git 使用 http 访问 GitHub 被阻断或网络问题</strong></p>
+<ul>
+<li><ul>
+<li>检查网络、防火墙或代理<ul>
+<li>或改用 SSH URL</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><strong>使用 SSH 方式</strong></p>
+<p>如果 HTTPS 总是连接失败，可以改用 SSH：</p>
+<ol>
+<li>生成 SSH Key（如果还没生成）：</li>
+</ol>
+<p>ssh-keygen -t ed25519 -C “<a href="mailto:&#121;&#x6f;&#x75;&#114;&#x5f;&#101;&#109;&#97;&#x69;&#108;&#64;&#101;&#120;&#97;&#x6d;&#x70;&#x6c;&#101;&#x2e;&#x63;&#x6f;&#109;">your_email@example.com</a>“</p>
+<ol>
+<li>添加公钥到 GitHub → Settings → SSH and GPG keys</li>
+<li>修改仓库 URL：</li>
+</ol>
+<p>git remote set-url origin <a href="mailto:&#x67;&#x69;&#x74;&#x40;&#x67;&#x69;&#x74;&#x68;&#117;&#98;&#46;&#x63;&#x6f;&#109;&#x3a;&#89;&#x53;&#x58;&#76;&#x2d;&#108;&#x69;&#x75;&#x79;&#x78;&#x2f;&#x79;&#115;&#x78;&#x6c;&#45;">git@github.com:YSXL-liuyx/ysxl-</a> liuyx.github.io.git</p>
+<ol>
+<li>再尝试：</li>
+</ol>
+<p>git pull origin main –allow-unrelated-histories</p>
 
       
     </div>
@@ -419,11 +521,13 @@ int main() &#123;
       
         <div class="post-tags">
           
-            <a href="/tags/%E5%AE%B9%E5%99%A8/" rel="tag"># 容器</a>
+            <a href="/tags/%E9%83%A8%E7%BD%B2/" rel="tag"># 部署</a>
           
-            <a href="/tags/STL/" rel="tag"># STL</a>
+            <a href="/tags/Hexo/" rel="tag"># Hexo</a>
           
-            <a href="/tags/C/" rel="tag"># C++</a>
+            <a href="/tags/Next/" rel="tag"># Next</a>
+          
+            <a href="/tags/Git/" rel="tag"># Git</a>
           
         </div>
       
@@ -436,15 +540,15 @@ int main() &#123;
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/2025/09/08/hello-world/" rel="next" title="Hello World">
+                <i class="fa fa-chevron-left"></i> Hello World
+              </a>
+            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2025/09/08/hello-world/" rel="prev" title="Hello World">
-                Hello World <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -496,17 +600,8 @@ int main() &#123;
       
 
       
-        <ul class="sidebar-nav motion-element">
-          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
-            Table of Contents
-          </li>
-          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
-            Overview
-          </li>
-        </ul>
-      
 
-      <section class="site-overview-wrap sidebar-panel">
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -570,22 +665,6 @@ int main() &#123;
         </div>
       </section>
 
-      
-      <!--noindex-->
-        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
-          <div class="post-toc">
-
-            
-              
-            
-
-            
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#C-%E5%AE%B9%E5%99%A8%E7%94%A8%E6%B3%95%E6%8C%87%E5%8D%97"><span class="nav-number">1.</span> <span class="nav-text">C++ 容器用法指南</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%9B%AE%E5%BD%95"><span class="nav-number">1.1.</span> <span class="nav-text">目录</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%BA%8F%E5%88%97%E5%BC%8F%E5%AE%B9%E5%99%A8"><span class="nav-number">1.2.</span> <span class="nav-text">序列式容器</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#vector-%E5%8A%A8%E6%80%81%E6%95%B0%E7%BB%84"><span class="nav-number">1.2.1.</span> <span class="nav-text">vector - 动态数组</span></a></li></ol></li></ol></li></ol></div>
-            
-
-          </div>
-        </section>
-      <!--/noindex-->
       
 
       
